@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gigachad's Domain</title>
+  <style>
+    /* Full Page Background with Gigachad Image */
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('images/your-gigachad-image-url.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Semi-transparent Overlay for Better Contrast */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+
+    /* Button Container to Hold Buttons and Title */
+    .button-container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    /* Title Styling */
+    h1 {
+      font-size: 4em;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1.5s ease;
+    }
+
+    /* Button Styling */
+    .button {
+      display: block;
+      width: 240px;
+      padding: 15px;
+      margin: 15px auto;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1.3em;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease, background 0.4s ease;
+    }
+
+    /* Hover Effect for Buttons */
+    .button:hover {
+      background: linear-gradient(45deg, #ff6e7f, #bfe9ff);
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(255, 75, 43, 0.6);
+    }
+
+    /* Button Press Animation */
+    .button:active {
+      transform: scale(0.98);
+    }
+
+    /* Fade-in Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Overlay for Darkening Background -->
+  <div class="overlay"></div>
+
+  <!-- Main Content and Buttons -->
+  <div class="button-container">
+    <h1>Welcome to Gigachad's Domain</h1>
+
+    <!-- Main Buttons with Links -->
+    <a href="#" class="button" onclick="copyToClipboard('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/Sezx-hub/Goku-moveset/refs/heads/main/GokuMovesetBlatant\'))()')">Copy Goku Moveset</a>
+    <a href="#" class="button" onclick="copyToClipboard('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/invertedth/Better-max-speed-fr/refs/heads/main/MODIFIED%20MAX%20SPEED\'))()')">Copy Max Speed</a>
+    <a href="https://discord.gg/A89zUQwb3k" class="button">Discord</a>
+    <a href="credits.html" class="button">Credits</a>
+  </div>
+
+  <script>
+    function copyToClipboard(text) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      alert('Copied: ' + text);
+    }
+  </script>
+
+</body>
+</html>
